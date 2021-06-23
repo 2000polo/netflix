@@ -1,0 +1,91 @@
+nav img{
+    height: 40px;
+    z-index: 2;
+    position: fixed;
+    top: 2vh;
+    left: 4%;
+}
+.main-signin-wrapper{
+    height: 90vh;
+    width: 100vw;
+    background-image: url(./hero-img.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    position: absolute;
+    top: 0;
+}
+
+.signin-section-wrapper{
+    height: auto;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index: 2;
+    position: relative;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.signin-section-wrapper h2{
+    margin-bottom: 10px;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields input{
+    height: 46px;
+    margin-bottom: 20px ;
+    background-color: rgb(68, 68, 68);
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+
+.s-signin{
+    width: 100%;
+    height: 46px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 20px 0 10px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.check-help{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .7rem;
+    color: rgb(165, 165, 165);
+}
+
+.check-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check-box input{
+    margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .signin-section-wrapper{
+        width: 70vw;
+    }
+}

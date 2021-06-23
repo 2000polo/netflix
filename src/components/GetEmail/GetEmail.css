@@ -1,0 +1,35 @@
+.e-mail-form{
+    width: 50vw;
+    height:60px;
+}
+
+.head-para{
+    text-align: center;
+}
+
+.e-mail{
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 15px;
+}
+
+.getstart{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(230, 0, 0);
+    border:none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .e-mail-form{
+        width: 80vw;
+    }
+}

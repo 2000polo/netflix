@@ -1,0 +1,37 @@
+.main-Accordion-wrapper{
+    height: auto;
+    width: 50vw;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    /* margin-top: 20px; */
+}
+
+.accordion-trigger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: rgb(49, 49, 49);
+    height: 63px;
+    cursor: pointer;
+}
+
+.accordion-content{
+    height: auto;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    margin-top: 2px;
+    padding: 5px 15px;
+}
+
+.close{
+    color: white;
+}
+
+@media only screen and (max-width: 900px){
+    .main-Accordion-wrapper{
+        width: 95vw;
+        font-size: 1rem;
+    }
+}

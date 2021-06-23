@@ -1,0 +1,52 @@
+.rowpost{
+    margin: 5vh 0vw;
+}
+
+.row-title{
+    margin: 5vh 12vw;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.poster{
+    height: 230px;
+    min-width: 170px;
+    border-radius: 15px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.other-poster{
+    height: 170px;
+    min-width: 230px;
+    border-radius: 15px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.posters{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.poster-title{
+    margin-left : 20px;
+    font-weight: 300;
+    font-size : .9rem
+}
+
+.Rating{
+    color: rgb(151, 151, 151);
+    font-weight: 300;
+    font-size: .7rem;
+    margin-left: 20px;
+}

@@ -1,0 +1,206 @@
+.L-logo img{
+    height: 40px;
+}
+
+.nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 5vw;
+}
+
+.land-nav-btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 13vw;
+    font-size: .8rem;
+}
+
+.language, .signin{
+    border: 1px solid white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.signin{
+    background: rgb(230, 0, 0);
+    border:none;
+    color: white;
+}
+
+.getstart-field{
+    height: 60px;
+    z-index: 1;
+}
+
+.text{
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(./img.jpg);
+}
+
+.main-head{
+    font-size: 3.5rem;
+    width:40vw;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.sub-head{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+.head-para{
+    margin-bottom: 2vh;
+}
+
+.land-overlay{
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.section1, .section2, .section3, .section4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-beween;
+    padding: 0 20vh;
+    width: 100vw;
+    border-top: 6px solid rgb(65, 65, 65);
+}
+
+.img1{
+    height: 450px;
+    min-width: 50%;
+    background-image: url(./tvimg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mobile{
+    height: 450px;
+    min-width: 50%;
+    background-image: url(./mobile-0819.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.children{
+    height: 450px;
+    min-width: 50%;
+    background-image: url(./AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mac-pc{
+    height: 450px;
+    min-width: 50%;
+    background-image: url(./mac-pc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section5{
+    padding: 0 10vh;
+    width: 100vw;
+    border-top: 6px solid rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.accordion-title{
+    margin-bottom: 20px;
+}
+
+.l-email{
+    margin: 30px 0px;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1100px){
+
+    .L-logo img{
+        height: 20px;
+    }
+
+    .land-nav-btn-wrapper{
+        width: 30w;
+    }
+
+    .main-head{
+        font-size:2.5rem;
+        width: 80vw;
+    }
+
+    .sub-head{
+        font-size: 1rem;
+    }
+
+    .head-para{
+        font-size: .7rem;
+    }
+
+    .section1, .section2, .section3, .section4{
+        /* display: block; */
+        flex-direction: column;
+        text-align: center;
+        padding-top:2vh;
+        padding-bottom: 2vh;
+        padding: 5vw;
+    }
+
+    .img1, .mobile, .mac-pc, .children{
+        height: 250px;
+        width: 100%;
+    }
+
+    .section2, .section4{
+        flex-direction: column-reverse;
+    }
+
+    .section5{
+        padding: 0;
+    }
+}

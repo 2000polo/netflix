@@ -1,0 +1,35 @@
+.footer-wrapper{
+    color: rgb(121, 121, 121);
+    border-top: 2px solid rgba(121, 121, 121, 0.288) ;
+}
+
+.footer-links{
+    margin: 0vh 17vw 6vh 17vw;
+    display:flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : space-between;
+
+}
+
+.footer-link-list{
+    list-style : none;
+    font-size: small;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    margin: 1vh 0;
+}
+
+.link:hover{
+    color: white;
+}
+
+.footer-heading{
+    font-size : 1rem;
+    font-weight: 400;
+    margin:5vh 17vw 2vh 17vw;
+}
