@@ -42,7 +42,7 @@
 }
 
 .nav-items ul .link:hover{
-    color: rgb(199, 199, 199);
+    color: rgb(255, 255, 255);
 }
 
 li::after{
@@ -52,5 +52,5 @@ li::after{
 }
 
 .link{
-    color:rgb(255, 255, 255); ;
+    color: white;
 }

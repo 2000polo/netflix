@@ -12,9 +12,9 @@ function Banner(){
     useEffect(() => {
         axios.get(`/trending/all/day?api_key=${apiKey}`).then((response)=>{
             setMovie(response.data.results[randmNum]);
-            
         })
     }, [])
+
     return (
         <div
         className="banner"

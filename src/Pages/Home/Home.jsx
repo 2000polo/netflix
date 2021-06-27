@@ -10,7 +10,7 @@ function Home(){
         <div className="main-home-wrapper">
             <Navbar />
             <Banner />
-            <Rowpost url = {Netflix} title = "Netflix Originals" />
+            <Rowpost url = {Netflix} title = "Netflix Originals"  />
             <Rowpost url = {Horror} title = "Horror" isSmall />
             <Rowpost url = {Fantasy} title = "Fantasy" isSmall />
             <Rowpost url = {Mystery} title = "Mystery" isSmall />
