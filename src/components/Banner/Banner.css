@@ -4,6 +4,7 @@
     /*background-image: url(./wallpapersden.com_netflix-kingdom_2048x1152.jpg);*/
     background-size: cover;
     display: flex;
+    background-position: center;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -119,4 +120,22 @@
 .banner-button{
     position :relative;
     z-index: 4;
+}
+
+@media only screen and (max-width: 700px){
+    .banner h1{
+        font-size: 2.25rem
+    }
+
+    .banner{
+        height: 50vh;
+    }
+
+    .overlay{
+        height: 50%;
+    }
+
+    .overlay1{
+        height: 50%;
+    }
 }

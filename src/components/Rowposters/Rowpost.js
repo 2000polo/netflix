@@ -2,15 +2,18 @@ import React,{useContext} from 'react'
 import './Rowpost.css'
 import { useEffect,useState } from 'react'
 import axios from '../axios'
-import { imageBaseUrl } from '../constants/constants'
+import { apiKey, imageBaseUrl } from '../constants/constants'
 import { viewContext } from '../../Context/Context';
 import { useHistory } from 'react-router-dom'; 
+import { Utube } from '../../Context/Youtube'
 
 
 function Rowpost(props){
 
     const [poster, setPoster] = useState([]);
-    const {setCurrent} = useContext(viewContext)
+    const {setCurrent} = useContext(viewContext);
+    const {setUtube} = useContext(Utube);
+    // const [utube, setUtube] = setState('');
 
     const history = useHistory();
 
@@ -18,6 +21,10 @@ function Rowpost(props){
         setCurrent(obj);
         console.log(obj)
         history.push('/view');
+        axios.get(`/movie/${obj.id}/videos?api_key=${apiKey}&language=en-US`).then(response=>{
+            console.log(response.data.results[0].key);
+            setUtube(response.data.results[0].key);
+        })
     }
 
     useEffect(() => {

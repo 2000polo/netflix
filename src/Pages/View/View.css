@@ -3,3 +3,15 @@
     height: 80vh;
     color: white;
 }
+
+.video-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+/* @media only screen and (max-width: 700px){
+    
+} */

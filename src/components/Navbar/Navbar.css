@@ -54,3 +54,20 @@ li::after{
 .link{
     color: white;
 }
+
+@media only screen and (max-width: 700px){
+    .logo img{
+        left: 2vh;
+    }
+
+    .nav-items{
+        right: 0vh;
+        width: 70%;
+    }
+
+    .nav-items li{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}

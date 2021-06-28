@@ -25,6 +25,7 @@
     margin-left: 20px;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .posters{
@@ -49,4 +50,28 @@
     font-weight: 300;
     font-size: .7rem;
     margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px){
+    .poster{
+        height: 125px;
+        min-width: 85px;
+    }
+
+    .poster-title{
+        font-size: .6rem;
+    }
+
+    .rating{
+        font-size: .5rem;
+    }
+
+    .other-poster{
+        height: 85px;
+        min-width: 125px;
+    }
+
+    .row-title{
+        font-size: .9rem;
+    }
 }
