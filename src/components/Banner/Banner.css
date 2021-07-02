@@ -112,7 +112,13 @@
     z-index: 0;
 }
 
-.title, .meta-data{
+.m-r-data-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.m-r-data-wrapper, .title, .meta-data{
     z-index: 5;
 
 }
@@ -129,6 +135,7 @@
 
     .banner{
         height: 50vh;
+        padding-top: 10vh ;
     }
 
     .overlay{

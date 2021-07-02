@@ -1,5 +1,9 @@
 import React from 'react'
 import './Navbar.css'
+import { FiSearch } from 'react-icons/fi';
+import { FiBell } from 'react-icons/fi';
+import { FiUser } from 'react-icons/fi';
+import { IconContext } from 'react-icons';
 
 function Navbar(){
 
@@ -12,15 +16,24 @@ function Navbar(){
 
                 <div className="nav-items">
                     <ul className="links">
-                        <li><a className='link'>Home</a></li>
-                        <li><a className='link'>Movies</a></li>
-                        <li><a className='link'>Series</a></li>
-                        <li><a className='link'>My List</a></li>
-                        
-                        <li><i className='fas fa-search'></i></li>
-                        <li><i className='fas fa-bell'></i></li>
-                        <li><i className='fas fa-user'></i></li>
+                        <li><a className='nav-link'>Home</a></li>
+                        <li><a className='nav-link'>Movies</a></li>
+                        <li><a className='nav-link'>Series</a></li>
+                        <li><a className='nav-link'>My List</a></li>   
+                    
                     </ul>
+
+                    <div className="icon-links">
+                            <IconContext.Provider value={{color:"white", size:"19px"}}>
+                                <FiSearch/>    
+                            </IconContext.Provider>    
+                            <IconContext.Provider value={{color:"white", size:"19px"}}>
+                                <FiBell/>    
+                            </IconContext.Provider>    
+                            <IconContext.Provider value={{color:"white", size:"19px"}}>
+                                <FiUser/>    
+                            </IconContext.Provider> 
+                    </div>
                 </div>
             </div>
         </div>

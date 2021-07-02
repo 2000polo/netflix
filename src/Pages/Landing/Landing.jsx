@@ -13,9 +13,6 @@ function Landing (){
         history.push('./signin');
     }
 
-    const home = () =>{
-        history.push('/home')
-    }
     return (
         <div className="Landing-main-wrapper">
             <div className="nav">
@@ -44,7 +41,7 @@ function Landing (){
                     <h5 className="sub-head">Watch anywhere, cancel anywere</h5>
                 </div>
                
-                <div onClick={home} className="getstart-field">
+                <div  className="getstart-field">
                     <GetEmail />
                 </div>
                 <div className="land-overlay">
@@ -103,7 +100,7 @@ function Landing (){
                 <Accordion />
                 <Accordion />
                 <Accordion />
-                <div onClick={home} className="l-email">
+                <div className="l-email">
                     <GetEmail />
                 </div>
                 

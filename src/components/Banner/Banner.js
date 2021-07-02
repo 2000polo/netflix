@@ -2,6 +2,8 @@ import axios from '../axios'
 import React,{useEffect, useState} from 'react'
 import { apiKey, imageBaseUrl } from '../constants/constants'
 import './Banner.css'
+import { IconContext } from 'react-icons';
+import { AiFillStar } from 'react-icons/ai';
 
 function Banner(){
 
@@ -22,7 +24,13 @@ function Banner(){
         >
             <h1 className='title' >{movie ? movie.name || movie.title : "" }</h1>
             <p className='meta-data' ><span className='meta-ttl'>Genere :</span> Survival <span className='data2' >|</span> Thriller </p>
-            <p className='meta-data' > <span className='meta-ttl'>Rating :</span> <span className='rating' >{movie ? movie.vote_average : "" }</span><span className='rating2' >/10</span> <span className = 'fas fa-star' ></span> </p>
+            <div className="m-r-data-wrapper">
+                <p className='meta-data' > <span className='meta-ttl'>Rating :</span> <span className='rating' >{movie ? movie.vote_average : "" }</span><span className='rating2' >/10</span></p>
+                <IconContext.Provider value={{color:"yellow", size:"20px"}}>
+                    <AiFillStar/>
+                </IconContext.Provider>
+            </div>
+            
             <p className = 'Description'>{movie ? movie.overview : "" }</p>
 
             <div className="banner-button">
