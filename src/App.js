@@ -3,7 +3,7 @@ import Home from './Pages/Home/Home';
 import Landing from './Pages/Landing/Landing';
 import Signin from './Pages/Signin/Signin';
 import View from './Pages/View/View';
-import { HashRouter as Router,Route} from 'react-router-dom'
+import { HashRouter as Router,Route} from 'react-router-dom';
 import Viewmovie from './Context/Context';
 import UtubeVedio from './Context/Youtube';
 
